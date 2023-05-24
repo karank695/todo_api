@@ -1,5 +1,18 @@
 # todo_api
 Postman collection link is here for getting reference of api's https://www.postman.com/krn0869/workspace/todos-api/collection/26990851-76107c8a-27f5-4895-b56b-615bec46e17c?action=share&creator=26990851<br>
+<h2>Note:</h2><br>
+For deleting,updating, creating todo you must need to register by using api http://localhost:8000/register<br>
+for this you need to pass your email and password to get token which will be valid for 2 minute.<br>
+in body you can enter your email and password<br>
+{
+    "email":"krn0869@gmail.com",
+    "password":"123"
+}<br>
+After this you have to enter this token as Bearer token in header <br>
+<b>Authorization</b> <b>Bearer &lt; token &gt; </b>
+
+<br>
+<hr>
 1. for getting todo list we can use api with <b>get</b> method http://localhost:8000/todo<br>
 response will be<br>
 {
